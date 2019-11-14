@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/doorkeeper-gem/doorkeeper
   revision: ce969eee6c16aa8082b0c77ebb5968d9e9b6a57b
-  ref: ce969eee6c16aa8082b0c77ebb5968d9e9b6a57b
+  branch: openproject
   specs:
     doorkeeper (5.0.2)
       railties (>= 4.2)
@@ -9,7 +9,7 @@ GIT
 GIT
   remote: https://github.com/finnlabs/omniauth-openid-connect.git
   revision: 9e7fd0e7bd36d40451c6b3c2ea641e8d237c295d
-  ref: 9e7fd0e7bd36d40451c6b3c2ea641e8d237c295d
+  branch: dev
   specs:
     omniauth-openid-connect (0.3.0)
       addressable (~> 2.5)
@@ -19,7 +19,7 @@ GIT
 GIT
   remote: https://github.com/finnlabs/omniauth-openid_connect-providers.git
   revision: 1d65afd2cbb0ff9cd294a764a4387e0fb36c92f4
-  ref: 1d65afd2cbb0ff9cd294a764a4387e0fb36c92f4
+  branch: dev
   specs:
     omniauth-openid_connect-providers (0.1.1)
       omniauth-openid-connect (>= 0.2.1)
@@ -27,13 +27,14 @@ GIT
 GIT
   remote: https://github.com/finnlabs/rspec-example_disabler.git
   revision: deb9c38e3f4e3688724583ac1ff58e1ae8aba409
+  branch: master
   specs:
     rspec-example_disabler (0.0.1)
 
 GIT
   remote: https://github.com/goodwill/capybara-select2
   revision: 585192e4bb0db8d52e761ab68f08c17294806447
-  ref: 585192e
+  branch: master
   specs:
     capybara-select2 (1.0.1)
       capybara
@@ -41,16 +42,16 @@ GIT
 
 GIT
   remote: https://github.com/norman/friendly_id
-  revision: 67422c04e1bfed4207b2a04826bc67ec0e231ce7
-  ref: 67422c04e1bfed4207b2a04826bc67ec0e231ce7
+  revision: ae73e4449daca24ce007a4de467901a2ff0dabf2
+  branch: master
   specs:
-    friendly_id (5.2.5)
+    friendly_id (5.3.0)
       activerecord (>= 4.0.0)
 
 GIT
   remote: https://github.com/opf/omniauth
   revision: fe862f986b2e846e291784d2caa3d90a658c67f0
-  ref: fe862f986b2e846e291784d2caa3d90a658c67f0
+  branch: master
   specs:
     omniauth (1.9.0)
       hashie (>= 3.4.6, < 3.7.0)
@@ -69,6 +70,7 @@ GIT
 GIT
   remote: https://github.com/rspec/rspec-activemodel-mocks
   revision: 0338d50039cad672bbe695fff5591da1ba849308
+  branch: master
   specs:
     rspec-activemodel-mocks (1.1.0)
       activemodel (>= 3.0)
@@ -283,11 +285,11 @@ GEM
     activerecord (6.0.1)
       activemodel (= 6.0.1)
       activesupport (= 6.0.1)
-    activerecord-import (1.0.2)
+    activerecord-import (1.0.3)
       activerecord (>= 3.2)
     activerecord-nulldb-adapter (0.4.0)
       activerecord (>= 2.0.0)
-    activerecord-session_store (1.1.1)
+    activerecord-session_store (1.1.3)
       actionpack (>= 4.0)
       activerecord (>= 4.0)
       multi_json (~> 1.11, >= 1.11.2)
@@ -312,18 +314,18 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     aes_key_wrap (1.0.1)
     afm (0.2.2)
-    airbrake (9.4.3)
-      airbrake-ruby (~> 4.6)
-    airbrake-ruby (4.6.0)
+    airbrake (9.4.5)
+      airbrake-ruby (~> 4.7)
+    airbrake-ruby (4.8.0)
       rbtree3 (~> 0.5)
     ast (2.4.0)
     attr_required (1.0.1)
-    autoprefixer-rails (9.4.7)
+    autoprefixer-rails (9.7.2)
       execjs
     awesome_nested_set (3.2.0)
       activerecord (>= 4.0.0, < 7.0)
     aws-eventstream (1.0.3)
-    aws-partitions (1.208.0)
+    aws-partitions (1.246.0)
     aws-sdk-core (3.66.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
       aws-partitions (~> 1.0)
@@ -345,7 +347,7 @@ GEM
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
-    backports (3.11.4)
+    backports (3.15.0)
     bcrypt (3.1.13)
     bindata (2.4.4)
     binding_of_caller (0.8.0)
@@ -366,7 +368,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
-    capybara-screenshot (1.0.22)
+    capybara-screenshot (1.0.24)
       capybara (>= 1.0, < 4)
       launchy
     carrierwave (1.3.1)
@@ -384,8 +386,7 @@ GEM
     cells-rails (0.0.9)
       actionpack (>= 3.0)
       cells (>= 4.1.6, < 5.0.0)
-    childprocess (0.9.0)
-      ffi (~> 1.0, >= 1.0.11)
+    childprocess (3.0.0)
     claide (1.0.3)
     claide-plugins (0.9.2)
       cork
@@ -468,13 +469,13 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.3)
-    disposable (0.4.4)
+    disposable (0.4.6)
       declarative (>= 0.0.9, < 1.0.0)
       declarative-builder (< 0.2.0)
       declarative-option (< 0.2.0)
       representable (>= 2.4.0, <= 3.1.0)
       uber (< 0.2.0)
-    domain_name (0.5.20180417)
+    domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
     equivalent-xml (0.6.0)
@@ -484,23 +485,23 @@ GEM
     erubi (1.9.0)
     escape_utils (1.2.1)
     eventmachine (1.2.7)
-    excon (0.62.0)
+    excon (0.69.1)
     execjs (2.7.0)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
     factory_bot_rails (4.11.1)
       factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
-    faker (1.9.1)
-      i18n (>= 0.7)
-    faraday (0.17.0)
+    faker (2.7.0)
+      i18n (>= 1.6, < 1.8)
+    faraday (0.17.1)
       multipart-post (>= 1.2, < 3)
     faraday-http-cache (2.0.0)
       faraday (~> 0.8)
-    fastimage (2.1.5)
-    ffi (1.10.0)
+    fastimage (2.1.7)
+    ffi (1.11.3)
     flamegraph (0.9.5)
-    fog-aws (3.3.0)
+    fog-aws (3.5.2)
       fog-core (~> 2.1)
       fog-json (~> 1.1)
       fog-xml (~> 0.1)
@@ -520,7 +521,8 @@ GEM
     fuubar (2.3.2)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
-    get_process_mem (0.2.3)
+    get_process_mem (0.2.5)
+      ffi (~> 1.0)
     gherkin (5.1.0)
     git (1.5.0)
     globalid (0.4.2)
@@ -540,16 +542,17 @@ GEM
     hashdiff (1.0.0)
     hashery (2.1.2)
     hashie (3.6.0)
-    html-pipeline (2.12.0)
+    html-pipeline (2.12.2)
       activesupport (>= 2)
       nokogiri (>= 1.4)
     htmldiff (0.0.1)
+    http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     httpclient (2.8.3)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
-    i18n-js (3.2.1)
+    i18n-js (3.2.3)
       i18n (>= 0.6.6)
     icalendar (2.5.3)
       ice_cube (~> 0.16)
@@ -558,10 +561,10 @@ GEM
     interception (0.5)
     ipaddress (0.8.3)
     iso8601 (0.12.1)
-    jaro_winkler (1.5.3)
+    jaro_winkler (1.5.4)
     jmespath (1.4.0)
-    jquery-tablesorter (1.27.0)
-      railties (~> 6.0.0, >= 3.2)
+    jquery-tablesorter (1.27.1)
+      railties (>= 3.2)
     json (2.2.0)
     json-jwt (1.11.0)
       activesupport (>= 4.2)
@@ -595,7 +598,7 @@ GEM
       activesupport (>= 4)
       railties (>= 4)
       request_store (~> 1.0)
-    loofah (2.3.1)
+    loofah (2.4.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -606,9 +609,9 @@ GEM
     meta-tags (2.11.1)
       actionpack (>= 3.2.0, < 6.1)
     method_source (0.9.2)
-    mime-types (3.2.2)
+    mime-types (3.3)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2018.0812)
+    mime-types-data (3.2019.1009)
     mimemagic (0.3.3)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -623,24 +626,24 @@ GEM
     mustermann-grape (1.0.0)
       mustermann (~> 1.0.0)
     nap (1.1.0)
-    net-ldap (0.16.1)
+    net-ldap (0.16.2)
     netrc (0.11.0)
-    newrelic_rpm (6.6.0.358)
+    newrelic_rpm (6.7.0.359)
     nio4r (2.5.2)
     no_proxy_fix (0.1.2)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
-    nokogumbo (2.0.1)
+    nokogumbo (2.0.2)
       nokogiri (~> 1.8, >= 1.8.4)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    oj (3.9.1)
+    oj (3.9.2)
     okcomputer (1.17.4)
     omniauth-saml (1.10.1)
       omniauth (~> 1.3, >= 1.3.2)
       ruby-saml (~> 1.7)
     open4 (1.3.4)
-    openid_connect (1.1.6)
+    openid_connect (1.1.8)
       activemodel
       attr_required (>= 1.0.0)
       json-jwt (>= 1.5.0)
@@ -651,18 +654,18 @@ GEM
       validate_url
       webfinger (>= 1.0.1)
     openproject-token (1.0.2)
-    parallel (1.17.0)
+    parallel (1.19.1)
     parallel_tests (2.29.2)
       parallel
-    parser (2.6.4.0)
+    parser (2.6.5.0)
       ast (~> 2.4.0)
-    passenger (6.0.2)
+    passenger (6.0.4)
       rack
       rake (>= 0.8.1)
     pdf-core (0.7.0)
     pdf-inspector (1.3.0)
       pdf-reader (>= 1.0, < 3.0.a)
-    pdf-reader (2.2.0)
+    pdf-reader (2.4.0)
       Ascii85 (~> 1.0.0)
       afm (~> 0.2.1)
       hashery (~> 2.0)
@@ -694,20 +697,20 @@ GEM
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
     public_suffix (4.0.1)
-    puma (4.2.0)
+    puma (4.3.0)
       nio4r (~> 2.0)
     rack (2.0.7)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-attack (6.1.0)
       rack (>= 1.0, < 3)
-    rack-mini-profiler (1.0.1)
+    rack-mini-profiler (1.1.3)
       rack (>= 1.2.0)
-    rack-oauth2 (1.9.3)
+    rack-oauth2 (1.10.1)
       activesupport
       attr_required
       httpclient
-      json-jwt (>= 1.9.0)
+      json-jwt (>= 1.11.0)
       rack
     rack-protection (2.0.7)
       rack
@@ -755,10 +758,10 @@ GEM
     raindrops (0.19.0)
     rake (13.0.1)
     rbtree3 (0.5.0)
-    rdoc (6.1.1)
-    recaptcha (5.1.0)
+    rdoc (6.2.0)
+    recaptcha (5.1.1)
       json
-    redcarpet (3.4.0)
+    redcarpet (3.5.0)
     reform (2.2.4)
       disposable (>= 0.4.1)
       representable (>= 2.4.0, < 3.1.0)
@@ -775,12 +778,13 @@ GEM
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
-    rest-client (2.0.2)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     retriable (3.1.2)
-    rinku (2.0.4)
+    rinku (2.0.6)
     roar (1.1.0)
       representable (~> 3.0.0)
     rotp (3.3.1)
@@ -805,10 +809,10 @@ GEM
       rspec-expectations (~> 3.8)
       rspec-mocks (~> 3.8)
       rspec-support (~> 3.8)
-    rspec-retry (0.6.1)
+    rspec-retry (0.6.2)
       rspec-core (> 3.3)
     rspec-support (3.9.0)
-    rubocop (0.74.0)
+    rubocop (0.77.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
@@ -825,7 +829,7 @@ GEM
     ruby-prof (1.0.0)
     ruby-progressbar (1.10.1)
     ruby-rc4 (0.1.5)
-    ruby-saml (1.9.0)
+    ruby-saml (1.11.0)
       nokogiri (>= 1.5.10)
     rubytree (1.0.0)
       json (~> 2.1)
@@ -836,10 +840,9 @@ GEM
       crass (~> 1.0.2)
       nokogiri (>= 1.8.0)
       nokogumbo (~> 2.0)
-    sassc (2.0.1)
+    sassc (2.2.1)
       ffi (~> 1.9)
-      rake
-    sassc-rails (2.1.0)
+    sassc-rails (2.1.2)
       railties (>= 4.0.0)
       sassc (>= 2.0)
       sprockets (> 3.0)
@@ -849,9 +852,9 @@ GEM
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
     secure_headers (6.1.1)
-    selenium-webdriver (3.141.0)
-      childprocess (~> 0.5)
-      rubyzip (~> 1.2, >= 1.2.2)
+    selenium-webdriver (3.142.6)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
     semantic (1.6.1)
     shoulda-context (1.2.2)
     shoulda-matchers (3.1.3)
@@ -868,7 +871,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    stackprof (0.2.12)
+    stackprof (0.2.13)
     stringex (2.8.5)
     structured_warnings (0.4.0)
     svg-graph (2.1.3)
@@ -878,19 +881,19 @@ GEM
       httpclient (>= 2.4)
     sys-filesystem (1.2.0)
       ffi
-    temple (0.8.0)
+    temple (0.8.2)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    test-prof (0.10.0)
+    test-prof (0.10.1)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     thor (0.20.3)
     thread_safe (0.3.6)
-    tilt (2.0.9)
+    tilt (2.0.10)
     timecop (0.9.1)
-    ttfunk (1.5.0)
+    ttfunk (1.5.1)
     typed_dag (2.0.2)
       rails (>= 5.0.4)
     tzinfo (1.2.5)
@@ -900,7 +903,7 @@ GEM
     uber (0.1.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.5)
+    unf_ext (0.0.7.6)
     unicode-display_width (1.6.0)
     unicorn (5.5.1)
       kgio (~> 2.6)
@@ -923,14 +926,14 @@ GEM
       rack (>= 2.0.6)
     warden-basic_auth (0.2.1)
       warden (~> 1.2)
-    webdrivers (4.1.2)
+    webdrivers (4.1.3)
       nokogiri (~> 1.6)
-      rubyzip (~> 1.0)
+      rubyzip (>= 1.3.0)
       selenium-webdriver (>= 3.0, < 4.0)
     webfinger (1.1.0)
       activesupport
       httpclient (>= 2.4)
-    webmock (3.7.2)
+    webmock (3.7.6)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -955,7 +958,7 @@ DEPENDENCIES
   acts_as_tree (~> 2.9.0)
   addressable (~> 2.7.0)
   airbrake (~> 9.4.3)
-  autoprefixer-rails (~> 9.4.5)
+  autoprefixer-rails
   awesome_nested_set (~> 3.2.0)
   aws-sdk-core (~> 3.66.0)
   aws-sdk-s3 (~> 1.48.0)
@@ -1051,7 +1054,7 @@ DEPENDENCIES
   pry-rails (~> 0.3.6)
   pry-rescue (~> 1.5.0)
   pry-stack_explorer (~> 0.4.9.2)
-  puma (~> 4.2.0)
+  puma
   rack-attack (~> 6.1.0)
   rack-mini-profiler
   rack-protection (~> 2.0.0)
