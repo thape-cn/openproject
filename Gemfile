@@ -41,8 +41,8 @@ gem 'rdoc', '>= 2.4.2'
 
 # Maintain our own omniauth due to relative URL root issues
 # see upstream PR: https://github.com/omniauth/omniauth/pull/903
-gem 'omniauth', git: 'https://github.com/opf/omniauth', ref: 'fe862f986b2e846e291784d2caa3d90a658c67f0'
-gem 'doorkeeper', git: 'https://github.com/doorkeeper-gem/doorkeeper', ref: 'ce969eee6c16aa8082b0c77ebb5968d9e9b6a57b'
+gem 'omniauth', git: 'https://github.com/opf/omniauth', branch: :master
+gem 'doorkeeper', git: 'https://github.com/doorkeeper-gem/doorkeeper', branch: :openproject
 gem 'request_store', '~> 1.4.1'
 
 gem 'warden', '~> 1.2'
@@ -51,7 +51,7 @@ gem 'warden-basic_auth', '~> 0.2.1'
 gem 'will_paginate', '~> 3.1.7'
 
 # Replace once friendly_id release supports rails 6
-gem 'friendly_id', git: 'https://github.com/norman/friendly_id', ref: '67422c04e1bfed4207b2a04826bc67ec0e231ce7'
+gem 'friendly_id', git: 'https://github.com/norman/friendly_id', branch: :master
 
 gem 'acts_as_list', '~> 0.9.9'
 gem 'acts_as_tree', '~> 2.9.0'
@@ -153,7 +153,7 @@ group :production do
   gem 'unicorn-worker-killer', require: false
 end
 
-gem 'autoprefixer-rails', '~> 9.4.5'
+gem 'autoprefixer-rails'
 gem 'bourbon', '~> 6.0.0'
 gem 'i18n-js', '~> 3.2.0'
 gem 'sassc-rails', '~> 2.1.0'
@@ -196,7 +196,7 @@ group :test do
   gem 'database_cleaner', '~> 1.6'
   gem 'rack_session_access'
   gem 'rspec', '~> 3.9.0'
-  gem 'rspec-activemodel-mocks', '~> 1.1.0', git: 'https://github.com/rspec/rspec-activemodel-mocks'
+  gem 'rspec-activemodel-mocks', '~> 1.1.0', git: 'https://github.com/rspec/rspec-activemodel-mocks', branch: :master
   # also add to development group, so "spec" rake task gets loaded
   gem 'rspec-rails', '~> 4.0.0beta3', group: :development
 
@@ -207,14 +207,14 @@ group :test do
   # XML comparison tests
   gem 'compare-xml', '~> 0.66', require: false
 
-  gem 'rspec-example_disabler', git: 'https://github.com/finnlabs/rspec-example_disabler.git'
+  gem 'rspec-example_disabler', git: 'https://github.com/finnlabs/rspec-example_disabler.git', branch: :master
 
   # brings back testing for 'assigns' and 'assert_template' extracted in rails 5
   gem 'rails-controller-testing', '~> 1.0.2'
 
   gem 'capybara', '~> 3.29.0'
   gem 'capybara-screenshot', '~> 1.0.17'
-  gem 'capybara-select2', git: 'https://github.com/goodwill/capybara-select2', ref: '585192e'
+  gem 'capybara-select2', git: 'https://github.com/goodwill/capybara-select2', branch: :master
   gem 'webdrivers', '~> 4.1.2', require: false
   gem 'selenium-webdriver', '~> 3.14'
 
