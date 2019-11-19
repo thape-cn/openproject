@@ -242,6 +242,11 @@ group :development do
   gem 'spring-commands-rspec'
 
   gem 'rubocop'
+
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-puma'
 end
 
 group :development, :test do
