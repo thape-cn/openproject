@@ -231,7 +231,7 @@ PATH
       spreadsheet (~> 0.8.9)
 
 GEM
-  remote: https://rubygems.org/
+  remote: https://gems.ruby-china.com/
   specs:
     Ascii85 (1.0.3)
     actioncable (6.0.1)
