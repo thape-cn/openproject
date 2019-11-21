@@ -3,11 +3,11 @@
   [
     {
       "path": ".",
-      "folder_exclude_patterns": ["_screenshots", ".bundle",".idea",".capistrano","log","tmp","storage",
+      "folder_exclude_patterns": ["_screenshots", ".bundle",".idea",".capistrano","files","log","tmp","storage",
                                   "public/assets","coverage","node_modules","public/packs",
                                   "app/assets/javascripts/vendor/ckeditor","app/assets/javascripts/locales"],
       "file_exclude_patterns": ["*.sublime-workspace",".byebug_history",".DS_Store","config/master.key",
-                                "config/credentials.yml.enc"]
+                                "config/credentials.yml.enc", ".openproject-token.pub"]
     }
   ],
   "settings":
