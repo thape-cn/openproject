@@ -38,11 +38,11 @@ class EnterpriseToken < ActiveRecord::Base
     end
 
     def allows_to?(action)
-      Authorization::EnterpriseService.new(current).call(action).result
+      true
     end
 
     def show_banners?
-      OpenProject::Configuration.ee_manager_visible? && (!current || current.expired?)
+      false
     end
 
     def set_current_token
