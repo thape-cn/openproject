@@ -236,7 +236,6 @@ end
 group :development do
   gem 'faker'
   gem 'letter_opener'
-  gem 'livingstyleguide', '~> 2.1.0'
 
   gem 'spring'
   gem 'spring-commands-rspec'
