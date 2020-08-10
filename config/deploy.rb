@@ -1,8 +1,8 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.11.2"
+lock "~> 3.16.0"
 
 set :application, "openproject"
-set :repo_url, "git@git.dev.tencent.com:ericguo/openproject.git"
+set :repo_url, "git@e.coding.net:sew/openproject.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
